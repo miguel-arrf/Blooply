@@ -32,6 +32,7 @@
 		1E4269222B51C3620000984E /* BottomBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBarView.swift; sourceTree = "<group>"; };
 		1E4269242B51C4EF0000984E /* ConvoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvoRowView.swift; sourceTree = "<group>"; };
 		1E4269272B51DCC10000984E /* ConvosManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvosManager.swift; sourceTree = "<group>"; };
+		1E4F5D112B52C8CB006E45B8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1E7C00492B521D9300069ED0 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		1EABCC072B5210C900EB782E /* CameraSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraSheetView.swift; sourceTree = "<group>"; };
 		1EABCC092B52144000EB782E /* VariableBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariableBlur.swift; sourceTree = "<group>"; };
@@ -53,6 +54,7 @@
 		1E4269052B51AC3D0000984E = {
 			isa = PBXGroup;
 			children = (
+				1E4F5D112B52C8CB006E45B8 /* README.md */,
 				1E4269102B51AC3D0000984E /* Blooply */,
 				1E42690F2B51AC3D0000984E /* Products */,
 			);
