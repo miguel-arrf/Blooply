@@ -12,6 +12,14 @@
 		1E4269162B51AC3D0000984E /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4269152B51AC3D0000984E /* Item.swift */; };
 		1E4269182B51AC3F0000984E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E4269172B51AC3F0000984E /* Assets.xcassets */; };
 		1E42691B2B51AC3F0000984E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E42691A2B51AC3F0000984E /* Preview Assets.xcassets */; };
+		1E4269232B51C3620000984E /* BottomBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4269222B51C3620000984E /* BottomBarView.swift */; };
+		1E4269252B51C4EF0000984E /* ConvoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4269242B51C4EF0000984E /* ConvoRowView.swift */; };
+		1E4269282B51DCC10000984E /* ConvosManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4269272B51DCC10000984E /* ConvosManager.swift */; };
+		1E42692B2B51E10D0000984E /* ScrollKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1E42692A2B51E10D0000984E /* ScrollKit */; };
+		1E7C004A2B521D9300069ED0 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7C00492B521D9300069ED0 /* View+Extension.swift */; };
+		1EABCC062B520F7100EB782E /* Camera-SwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 1EABCC052B520F7100EB782E /* Camera-SwiftUI */; };
+		1EABCC082B5210C900EB782E /* CameraSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EABCC072B5210C900EB782E /* CameraSheetView.swift */; };
+		1EABCC0A2B52144000EB782E /* VariableBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EABCC092B52144000EB782E /* VariableBlur.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +29,12 @@
 		1E4269152B51AC3D0000984E /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		1E4269172B51AC3F0000984E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E42691A2B51AC3F0000984E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1E4269222B51C3620000984E /* BottomBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBarView.swift; sourceTree = "<group>"; };
+		1E4269242B51C4EF0000984E /* ConvoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvoRowView.swift; sourceTree = "<group>"; };
+		1E4269272B51DCC10000984E /* ConvosManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvosManager.swift; sourceTree = "<group>"; };
+		1E7C00492B521D9300069ED0 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		1EABCC072B5210C900EB782E /* CameraSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraSheetView.swift; sourceTree = "<group>"; };
+		1EABCC092B52144000EB782E /* VariableBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariableBlur.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E42692B2B51E10D0000984E /* ScrollKit in Frameworks */,
+				1EABCC062B520F7100EB782E /* Camera-SwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,11 +69,14 @@
 		1E4269102B51AC3D0000984E /* Blooply */ = {
 			isa = PBXGroup;
 			children = (
+				1E7C00482B521D8B00069ED0 /* Extensions */,
+				1E4269262B51DCB90000984E /* Model */,
+				1E4269212B51C17B0000984E /* Views */,
 				1E4269112B51AC3D0000984E /* BlooplyApp.swift */,
-				1E4269132B51AC3D0000984E /* ContentView.swift */,
 				1E4269152B51AC3D0000984E /* Item.swift */,
 				1E4269172B51AC3F0000984E /* Assets.xcassets */,
 				1E4269192B51AC3F0000984E /* Preview Content */,
+				1EABCC092B52144000EB782E /* VariableBlur.swift */,
 			);
 			path = Blooply;
 			sourceTree = "<group>";
@@ -68,6 +87,33 @@
 				1E42691A2B51AC3F0000984E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1E4269212B51C17B0000984E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1E4269132B51AC3D0000984E /* ContentView.swift */,
+				1E4269222B51C3620000984E /* BottomBarView.swift */,
+				1E4269242B51C4EF0000984E /* ConvoRowView.swift */,
+				1EABCC072B5210C900EB782E /* CameraSheetView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1E4269262B51DCB90000984E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1E4269272B51DCC10000984E /* ConvosManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1E7C00482B521D8B00069ED0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1E7C00492B521D9300069ED0 /* View+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +132,10 @@
 			dependencies = (
 			);
 			name = Blooply;
+			packageProductDependencies = (
+				1E42692A2B51E10D0000984E /* ScrollKit */,
+				1EABCC052B520F7100EB782E /* Camera-SwiftUI */,
+			);
 			productName = Blooply;
 			productReference = 1E42690E2B51AC3D0000984E /* Blooply.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +164,10 @@
 				Base,
 			);
 			mainGroup = 1E4269052B51AC3D0000984E;
+			packageReferences = (
+				1E4269292B51E10D0000984E /* XCRemoteSwiftPackageReference "ScrollKit" */,
+				1EABCC042B520F7100EB782E /* XCRemoteSwiftPackageReference "Camera-SwiftUI" */,
+			);
 			productRefGroup = 1E42690F2B51AC3D0000984E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,9 +194,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EABCC0A2B52144000EB782E /* VariableBlur.swift in Sources */,
 				1E4269142B51AC3D0000984E /* ContentView.swift in Sources */,
 				1E4269162B51AC3D0000984E /* Item.swift in Sources */,
+				1E4269252B51C4EF0000984E /* ConvoRowView.swift in Sources */,
 				1E4269122B51AC3D0000984E /* BlooplyApp.swift in Sources */,
+				1E4269232B51C3620000984E /* BottomBarView.swift in Sources */,
+				1E4269282B51DCC10000984E /* ConvosManager.swift in Sources */,
+				1E7C004A2B521D9300069ED0 /* View+Extension.swift in Sources */,
+				1EABCC082B5210C900EB782E /* CameraSheetView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +339,7 @@
 				DEVELOPMENT_TEAM = J85899W596;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need your camera to talk with AI";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -308,6 +369,7 @@
 				DEVELOPMENT_TEAM = J85899W596;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need your camera to talk with AI";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -348,6 +410,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1E4269292B51E10D0000984E /* XCRemoteSwiftPackageReference "ScrollKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielsaidi/ScrollKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.0;
+			};
+		};
+		1EABCC042B520F7100EB782E /* XCRemoteSwiftPackageReference "Camera-SwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rorodriguez116/Camera-SwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1E42692A2B51E10D0000984E /* ScrollKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E4269292B51E10D0000984E /* XCRemoteSwiftPackageReference "ScrollKit" */;
+			productName = ScrollKit;
+		};
+		1EABCC052B520F7100EB782E /* Camera-SwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1EABCC042B520F7100EB782E /* XCRemoteSwiftPackageReference "Camera-SwiftUI" */;
+			productName = "Camera-SwiftUI";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1E4269062B51AC3D0000984E /* Project object */;
 }

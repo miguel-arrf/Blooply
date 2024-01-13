@@ -10,11 +10,14 @@ import SwiftData
 
 @main
 struct BlooplyApp: App {
+    @State private var convosManager = ConvosManager()
+
+    
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            Convo.self,
         ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
+        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: true)
 
         do {
             return try ModelContainer(for: schema, configurations: [modelConfiguration])
@@ -26,6 +29,7 @@ struct BlooplyApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(convosManager)
         }
         .modelContainer(sharedModelContainer)
     }
