@@ -28,12 +28,14 @@ struct BottomBarView: View {
             Text("How can I help you?")
                 .foregroundStyle(isDown ? .primary : .tertiary)
                 .fontWeight(isDown ? .bold : .regular)
+                .animation(.easeInOut, value: isDown)
                 .padding(.bottom, isDown ? 26 : 0)
-                .opacity(hasOpenSheet ? 0 : 1)
+                .opacity(hasOpenSheet ? 0 : 0.8)
                 .onTapGesture {
                     onOptionSelected(.keyboard)
                     onKeyboardOptionSelected()
                 }
+                .frame(maxWidth: .infinity, alignment: .center)
             
             HStack {
                 Spacer()

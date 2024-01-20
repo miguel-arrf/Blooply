@@ -71,7 +71,7 @@ struct ConvoRowView: View {
         .onTapGesture {
             
         }
-        .onLongPressGesture(minimumDuration: 1.0, perform: {
+        .onLongPressGesture(minimumDuration: 0.5, perform: {
             print("onLongPressGesture")
             
             withAnimation {
