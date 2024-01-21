@@ -153,9 +153,6 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             ScrollViewWithOffsetTracking { offset in
-                
-                print("offset: \(offset)")
-                
                 if offset.y > 100 && canCompress == true {
                     canCompress = false
                     if compressionSpacing == 40 {
